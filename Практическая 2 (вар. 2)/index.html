@@ -1,0 +1,43 @@
+<html>
+	<header>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</header>
+	<body>
+
+		<form method="post">
+			<h3>Регистрация</h3>
+			<hr>
+			<br>
+			
+			<section>
+			<label for="name">Ваше имя:</label><br>
+			<input id="name" autocomplete="off" type='text' size="19" placeholder="Иван" pattern="[A-Za-zА-Яа-яЁё0-9]{2,12}" required ><br>
+			
+			<label for="fam">Ваша фамилия:</label><br>
+			<input autocomplete="on" id="fam" type='text' size="19" placeholder="Иванов" pattern="[A-Za-zА-Яа-яЁё]{2,16}" required ><br>
+			
+			<label for="login">Ваш логин:</label><br>
+			<input id="login" autocomplete="off" type='text' size="19" placeholder="ivan" pattern="[A-Za-zА-Яа-яЁё0-9]{3,14}" required ><br>
+			
+			<label for="email">Ваш e-mail:</label><br>
+			<input autocomplete="on" id="email" type='email' size="19" placeholder="ivanov@mail.com" required ><br>
+			
+			<label for="pas1">Ваш пароль:</label><br>			
+			<input autocomplete="off" id="pas1" type='password' size="19" placeholder="123qR" required pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,})" maxlength="10"><br>
+			
+			<label for="pas2">Повторите пароль:</label><br>
+			<input autocomplete="off" id="pas2" type='password' size="19" placeholder="123qR" required pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,})" maxlength="10">
+			</section>
+			<fieldset>
+				<legend>Оформить подписку на:</legend>
+				<input type="checkbox" name="news" value="news"> Новости  <br>
+				<input type="checkbox" name="shares" value="shares"> Акции<br>
+				<input type="checkbox" name="events" value="events"> Мероприятия
+			</fieldset>
+			<br>
+			<input id="submit" type="submit" value="Регистрирация">
+			<br>
+			<br>
+		</form>
+	</body>
+</html>
